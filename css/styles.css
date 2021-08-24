@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap');
+
+*{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;   
+}
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.image-container{
+    width: 20rem;
+    height: 20rem;
+    overflow: auto;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+}
+.image{  
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    align-items: center;
+    object-fit: cover;
+    animation-name: giro;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+.controls-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@keyframes giro{
+    from{
+        transform: rotate(0deg);}
+    to{
+        transform: rotate(360deg);}
+}
